@@ -13,6 +13,10 @@
 
 
 </head>
+
+
+
+
 <body onload="newFact()">
     
     <section id="whole">
@@ -23,6 +27,9 @@
         </div>
     </section>
     <section id="quotes">
+
+        <h1 style="text-align: center; color: rgb(111, 185, 188); font-size: 28px; margin-bottom: 15px; margin-top: 10px;">Daily enlightment dose</h1>
+
         <div id="SS">
         <div id="quote">
             <p id="factDisplay"></p>
@@ -95,11 +102,11 @@
     <div class="bbtns">
         <div class="child"><button class="lastbtn" onclick="clearIt()">Clear</button></div>
         <div class="child"><button class="lastbtn" onclick="upperCase()">Capitalize</button></div>
-        <div class="child"><button class="lastbtn">Sort</button></div>
+        <div class="child"><button class="lastbtn" onclick="sorttext()">Sort</button></div>
         <div class="child"><button class="lastbtn" onclick="reverseIt()">Reverse</button></div>
-        <div class="child"><button class="lastbtn">Strip Blank</button></div>
-        <div class="child"><button class="lastbtn">Add Numbers</button></div>
-        <div class="child"><button class="lastbtn">Shuffle</button></div>
+        <div class="child"><button class="lastbtn" onclick="strip()">Strip Blank</button></div>
+        <div class="child"><button class="lastbtn" onclick="addNumber()">Add Numbers</button></div>
+        <div class="child"><button class="lastbtn" onclick="suffleIt()">Shuffle</button></div>
     </div>
 
 </div>

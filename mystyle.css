@@ -34,7 +34,7 @@ background-image: url('assets/bg.png');
 
   }
   #quote{
-    height: 8vh;
+    max-height: 20vh;
     color: rgb(253, 254, 255);
     border: 2px solid rgb(222, 243, 128);
     border-radius: 5px;

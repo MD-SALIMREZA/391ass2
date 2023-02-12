@@ -1,6 +1,6 @@
 
 function newFact() {
-  var facts = ["hhhhh hhhh hhh", "hhj jjjjjj jjjkdfa lsglagh", "3tof bbbbbwkjbaf balkfb kabvabvalkbvak"];
+  var facts = ["You, darkness, of whom I am born- I love you more than the flame that limits the world to the circle it illumines and excludes the rest.", "Keep smiling, because life is a beautiful thing and there's so much to smile about", "Life is either a daring adventure or nothing at all."];
 var randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
 }
@@ -81,18 +81,82 @@ function upperCase(){
  txt=txt.toUpperCase();
  document.getElementById("tname").value=txt;
 }
+
+
+
 function clearIt(){
   var txt= document.getElementById("tname").value;
  txt="";
  document.getElementById("tname").value=txt;
 }
+
+
+  
+   //---------------------------------------
+
+
+   function addNumber(){
+  var x= document.getElementById("tname").value;
+  x=x.split("\n");
+  var y="";
+  for (var i = 0; i <x.length; i++) {
+      x[i]=i+1+'. '+x[i];
+      y=y+x[i]+'\n';          
+  };
+  document.getElementById("tname").value=y.substring(0,y.length-1);
+}
+
+function sorttext(){
+  var x= document.getElementById("tname").value;
+  x=x.split("\n");
+  x.sort();
+ var y="";
+  for (var i = 0; i <x.length; i++) {      
+      y=y+x[i]+'\n';          
+  };
+  document.getElementById("tname").value=y.substring(0,y.length-1);
+}
+
 function reverseIt(){
-  var inputs= document.getElementById("tname").value;
-var myStrings=[];
-  myStrings.push(inputs);
+  var x= document.getElementById("tname").value;
+  x=x.split("\n");
+ var y="";
+  for (var i = 0; i <x.length; i++) {   
+      x[i]=x[i].split("").reverse().join("");
+      y=y+x[i]+'\n';          
+  };
+  document.getElementById("tname").value=y.substring(0,y.length-1);
+}
 
-  var reverses= myStrings.reverse();
-  var newr =reverses.toString();
-  document.getElementById("tname").value= newr;
+function strip(){
+  var x= document.getElementById("tname").value;
+  x=x.split("\n");
+  var y="";
+  for (var i = 0; i <x.length; i++) {
+    x[i]=x[i].replace(/\s+/g,' ').trim(); 
+    if (x[i] !== '') {
+      y=y+x[i]+'\n';  
+    };
+    
+  };
+  document.getElementById("tname").value=y.substring(0,y.length-1);}
 
-  }
+function suffleIt(){
+  var x= document.getElementById("tname").value;
+   x=x.split("\n");
+  var y="";
+   for (var i = x.length-1; i >=0; i--) {
+     var j=Math.round(Math.random()*(x.length-1));
+       var tmp=x[i];
+       x[i]=x[j];
+       x[j]=tmp;                        
+   };
+   for (var i = 0; i <x.length; i++) {      
+       y=y+x[i]+'\n';          
+   };
+   document.getElementById("tname").value=y.substring(0,y.length-1);  
+ }
+
+
+
+  
