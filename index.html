@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>My-JS-page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="mystyle.css">
+<script src="mj.js"></script>
+
+
+
+
+</head>
+<body onload="newFact()">
+    
+    <section id="whole">
+        
+        <section id="nav">
+        <div class="logo">
+            <img src="assets/391.png" alt="image" >
+        </div>
+    </section>
+    <section id="quotes">
+        <div id="SS">
+        <div id="quote">
+            <p id="factDisplay"></p>
+        </div>
+        <div class="color_picker">
+         <button onclick="redd()" class="clr" style="background-color: red;"> <div id=""  ></div>      </button>
+         <button  onclick="yellow()" class="clr" style="background-color: rgb(252, 218, 106);"> <div id=""  ></div></button>
+         <button   onclick="green()" class="clr" style="background-color: rgb(57, 255, 60);"> <div id=""  ></div></button>
+         <button   onclick="blue()" class="clr" style="background-color: rgb(165, 77, 236);"> <div id=""  ></div></button>
+
+        </div>
+        </div>
+
+        <section id="converter">
+            <h1 style="color: rgb(248, 170, 52);font-size:24px;text-align:center">Convert Your Weight</h1>
+            <div class="line"></div>
+            <div id="boxx">
+                <label for="fname" style="color: white;font-family: cursive;">Convert</label>
+                <input type="text" id="fname" name="fname" size="8" style="padding: 8px 0px;" >
+
+<label for="weight" style="color: rgb(196, 201, 201);font-family: cursive;">Choose your method</label>
+<select name="options" id="weight" style="padding: 8px 0px;">
+   <option value="kg" >lb to kg</option>
+   <option value="lbs">kg to lb</option>
+  
+</select>
+<button onclick="convert()" id="btntask2">GO</button>
+       <span id="calculate" style="color: white;"></span>
+            </div>
+            <div class="line"></div>
+
+        </section>
+
+
+
+
+<section id="t3">
+    <h1 style="color: rgb(248, 170, 52);font-size:24px;text-align:center;margin-top: 50px;text-decoration: underline;font-family: cursive;">Find Out Details About Your Series</h1>
+
+<div class="tt3">
+
+    <label for="nname" style="color: white;font-family: cursive;font-size: 20px;">Input Series Of Numbers</label>
+
+    <input type="text" id="nname" name="nname" size="32" style="padding: 8px 0px;" onkeyup="numberCalc()" >
+   
+
+    <p id="max" class="task3">Max:</p>
+    <p id="min" class="task3">Min:</p>
+    <p id="sum" class="task3">Sum:</p>
+    <p id="average" class="task3">Average:</p>
+    <p id="reverse" class="task3" style="color: white;">Reverse:</p>
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="lastPart">
+<div>
+<h1 style="color: rgb(248, 170, 52);font-size:24px;text-align:center;margin-top: 50px;text-decoration: underline;font-family: cursive;">Type to see MAGIC!!!</h1>
+<div class="content">
+
+    <textarea id="tname" name="tname" rows="12" cols="80" style="padding: 8px 0px; background-color: blueviolet;color: whitesmoke; font-family: cursive; font-size: 18px; border-radius: 5px;" ></textarea>
+
+    <div class="bbtns">
+        <div class="child"><button class="lastbtn" onclick="clearIt()">Clear</button></div>
+        <div class="child"><button class="lastbtn" onclick="upperCase()">Capitalize</button></div>
+        <div class="child"><button class="lastbtn">Sort</button></div>
+        <div class="child"><button class="lastbtn" onclick="reverseIt()">Reverse</button></div>
+        <div class="child"><button class="lastbtn">Strip Blank</button></div>
+        <div class="child"><button class="lastbtn">Add Numbers</button></div>
+        <div class="child"><button class="lastbtn">Shuffle</button></div>
+    </div>
+
+</div>
+
+
+
+</div>
+
+</section>
+<div style="text-align: center; margin:20vh;font-family: cursive; font-weight: bold;color: whitesmoke; font-size: 32px; font-style: italic;" >The End</div>
+
+
+</section>
+         
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   
+
+}
+#whole{
+
+min-height: 480vh;
+background-image: url('assets/bg.png');
+
+}
+#nav{
+    padding-top: 40px;
+  }
+  .logo img{
+    position: fixed;
+    height: 50px;
+    top: 20px;
+    left: 8px;
+    border-radius: 50px;
+    z-index: 5;
+    border: 2px solid rgb(88, 255, 249);
+  
+  }
+ #SS{
+    margin-top: 50px;
+    height: 10vh;
+    width: 55%;
+    
+    display: flex;
+    margin: auto;
+
+  }
+  #quote{
+    height: 8vh;
+    color: rgb(253, 254, 255);
+    border: 2px solid rgb(222, 243, 128);
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    margin: auto; 
+    margin-right: 0px;
+    background-color: rgb(158, 163, 140);
+   
+  }
+  .color_picker{
+    width: 12%;
+    border: 1px solid white;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(84, 72, 43);
+  
+    border-radius: 5px;
+  }
+  .clr{
+    margin: 3px;
+    border: 1.5px solid white;
+    border-radius: 9px;
+  }
+  /*task2*/
+
+  #converter{
+    margin-top: 40vh;
+
+
+  }
+  #boxx{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+#btntask2{
+  padding: 5px 10px;
+ background-color: rgb(209, 245, 109);
+ border-radius: 5px;
+ font-weight: bold;
+ font-size: 20px;
+  
+}
+.line{
+  width:50%;
+ 
+  border-radius: 10px;
+  height: 2.5px;
+  background-color: bisque;
+
+margin: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+
+}
+
+/*task3*/
+#t3{
+width: 50%;
+min-height: 50vh;
+margin: auto;
+margin-top: 40vh;
+text-align: center;
+border: 2px solid rgb(112, 255, 141);
+
+}
+.tt3{
+  margin-top: 10vh;
+}
+.task3{
+  color: azure;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10vh;
+}
+
+/*task4*/
+#lastPart{
+  width: 85%;
+  margin: auto;
+  border: 2px solid rgb(254, 61, 106);
+  height: 100vh;
+  margin-top: 80vh;
+}
+.content{
+width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+}
+.bbtns{
+
+  display: flex;
+ 
+
+}
+.child{
+  
+  margin: 3px;
+
+}
+.lastbtn{
+  padding:7px 12px;
+  background-color: brown;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid wheat;
+}
